@@ -30,7 +30,7 @@ def main():
     opt = parser.parse_args()
     torch.manual_seed(opt.seed)
 
-    model_path = "mbart-large-50"
+    model_path = "facebook/mbart-large-50"
     model = MBartForConditionalGeneration.from_pretrained(model_path)
     model_dir = 'checkpoints/lmm_sft.chkpt'
     model.load_state_dict(torch.load(model_dir))
