@@ -75,6 +75,8 @@ packaging==25.0
     # via
     #   huggingface-hub
     #   transformers
+protobuf==6.33.1
+    # via -r requirements.in
 pyyaml==6.0.3
     # via
     #   huggingface-hub
