@@ -12,6 +12,27 @@ git clone https://github.com/wangchunliu/DRS-pretrained-LMM.git
 cd DRS-pretrained-LMM
 ```
 
+#### Recommned way to run the below code
+
+1. [install `uv`](https://docs.astral.sh/uv/getting-started/installation/)
+
+2. create a venv (and activate)
+```sh
+uv venv
+source .venv/bin/activate
+```
+
+3. install jupyter notebook and other related dependencies
+```sh
+uv pip compile requirements.in -o requirements.txt
+uv pip install -r requirements.txt
+```
+
+4. I have pasted the below code in the `run_drs.py` file, you can run it this way
+```sh
+uv run run_drs.py
+```
+
 ```python
 # a case of drs-text generation
 from tokenization_mlm import MLMTokenizer
